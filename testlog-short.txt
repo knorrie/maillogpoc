@@ -1,0 +1,27 @@
+Dec  5 19:14:09 mx1 postfix/smtpd[31131]: connect from sjc-mailman2.sjc.dropbox.com[199.47.219.144]
+Dec  5 19:14:10 mx1 postfix/smtpd[31131]: setting up TLS connection from sjc-mailman2.sjc.dropbox.com[199.47.219.144]
+Dec  5 19:14:10 mx1 postfix/smtpd[31131]: Anonymous TLS connection established from sjc-mailman2.sjc.dropbox.com[199.47.219.144]: TLSv1 with cipher ADH-AES256-SHA (256/256 bits)
+Dec  5 19:14:10 mx1 postfix/smtpd[31131]: EF9EC4F76: client=sjc-mailman2.sjc.dropbox.com[199.47.219.144]
+Dec  5 19:14:11 mx1 postfix/cleanup[30907]: EF9EC4F76: message-id=<20121205181409.25087B00FD6@sjc-batch2.sjc.dropbox.com>
+Dec  5 19:14:11 mx1 postfix/qmgr[30847]: EF9EC4F76: from=<no-reply@dropboxmail.com>, size=6538, nrcpt=1 (queue active)
+Dec  5 19:14:11 mx1 clamsmtpd: 145201: accepted connection from: 127.0.0.1
+Dec  5 19:14:11 mx1 postfix/smtpd[30910]: connect from localhost[127.0.0.1]
+Dec  5 19:14:11 mx1 postfix/smtpd[30910]: 60FC452F1: client=localhost[127.0.0.1]
+Dec  5 19:14:11 mx1 postfix/cleanup[30911]: 60FC452F1: message-id=<20121205181409.25087B00FD6@sjc-batch2.sjc.dropbox.com>
+Dec  5 19:14:11 mx1 postfix/qmgr[30847]: 60FC452F1: from=<no-reply@dropboxmail.com>, size=6578, nrcpt=1 (queue active)
+Dec  5 19:14:11 mx1 postfix/smtp[30908]: EF9EC4F76: to=<xxx.xxx@example.com>, relay=127.0.0.1[127.0.0.1]:10024, delay=0.7, delays=0.56/0/0.04/0.1, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 60FC452F1)
+Dec  5 19:14:11 mx1 clamsmtpd: 145201: from=no-reply@dropboxmail.com, to=xxx.xxx@example.com, status=CLEAN
+Dec  5 19:14:11 mx1 postfix/qmgr[30847]: EF9EC4F76: removed
+Dec  5 19:14:11 mx1 postfix/smtpd[30914]: connect from localhost[127.0.0.1]
+Dec  5 19:14:11 mx1 postfix/smtpd[30910]: disconnect from localhost[127.0.0.1]
+Dec  5 19:14:11 mx1 postfix/smtpd[30914]: 7A1B74F76: client=localhost[127.0.0.1]
+Dec  5 19:14:11 mx1 postfix/smtpd[31131]: disconnect from sjc-mailman2.sjc.dropbox.com[199.47.219.144]
+Dec  5 19:14:11 mx1 spampd[28001]: processing message <20121205181409.25087B00FD6@sjc-batch2.sjc.dropbox.com> for <xxx.xxx@example.com> ORCPT=rfc822;xxx.xxx@example.com
+Dec  5 19:14:12 mx1 spampd[28001]: clean message <20121205181409.25087B00FD6@sjc-batch2.sjc.dropbox.com> (-0.69/6.00) from <no-reply@dropboxmail.com> for <xxx.xxx@example.com> ORCPT=rfc822;xxx.xxx@example.com in 1.33s, 6565 bytes.
+Dec  5 19:14:12 mx1 postfix/cleanup[30911]: 7A1B74F76: message-id=<20121205181409.25087B00FD6@sjc-batch2.sjc.dropbox.com>
+Dec  5 19:14:12 mx1 postfix/qmgr[30847]: 7A1B74F76: from=<no-reply@dropboxmail.com>, size=6795, nrcpt=1 (queue active)
+Dec  5 19:14:12 mx1 postfix/smtp[30913]: 60FC452F1: to=<xxx.xxx@example.com>, relay=127.0.0.1[127.0.0.1]:10026, delay=1.5, delays=0.1/0/0/1.4, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 7A1B74F76)
+Dec  5 19:14:12 mx1 postfix/smtpd[30914]: disconnect from localhost[127.0.0.1]
+Dec  5 19:14:12 mx1 postfix/qmgr[30847]: 60FC452F1: removed
+Dec  5 19:14:13 mx1 postfix/smtp[30918]: 7A1B74F76: to=<xxx.xxx@example.com>, relay=example.com[2001:500:88:200::10]:25, delay=1.7, delays=1.4/0/0.04/0.19, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as 20843222DE)
+Dec  5 19:14:13 mx1 postfix/qmgr[30847]: 7A1B74F76: removed
